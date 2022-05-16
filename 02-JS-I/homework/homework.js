@@ -84,7 +84,7 @@ function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num <90 ) {
+  if (num < 90) {
     return true;
   }
   else {
@@ -245,12 +245,15 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   if(letra.length > 1){
-    return "Dato incorrecto"
+    return "Dato incorrecto";
   }
-  if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
-    return "Es vocal"
+   else if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
+    return "Es vocal";
+  } else {
+ 
+   return "Dato incorrecto" 
   }
-  return "Dato incorrecto"
+  
 
 }
 
